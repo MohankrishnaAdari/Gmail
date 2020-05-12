@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="15" total="16" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Test passed for Delete mails test pass]]>
+    </line>
+    <line>
+      <![CDATA[<a href="D:\Selenium\Workspace\org.mohan.mail\12-May-2020-01-57-21.png"><img src="D:\Selenium\Workspace\org.mohan.mail\12-May-2020-01-57-21.png" height="100" width="100"/></a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="48747" started-at="2020-05-12T08:26:44Z" finished-at="2020-05-12T08:27:33Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="10" started-at="2020-05-12T08:26:44Z" finished-at="2020-05-12T08:26:44Z">
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="3" started-at="2020-05-12T08:26:44Z" finished-at="2020-05-12T08:26:44Z">
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="3" started-at="2020-05-12T08:26:44Z" finished-at="2020-05-12T08:26:44Z">
+    </test> <!-- Test3 -->
+    <test name="Test4" duration-ms="48658" started-at="2020-05-12T08:26:44Z" finished-at="2020-05-12T08:27:33Z">
+      <class name="com.gmail.TestCases.TestCase">
+        <test-method status="PASS" signature="method1()[pri:0, instance:com.gmail.TestCases.TestCase@6eebc39e]" name="method1" is-config="true" duration-ms="15" started-at="2020-05-12T13:56:44Z" finished-at="2020-05-12T13:56:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+        <test-method status="PASS" signature="deleteUnreadMails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gmail.TestCases.TestCase@6eebc39e]" name="deleteUnreadMails" duration-ms="46481" started-at="2020-05-12T13:56:44Z" finished-at="2020-05-12T13:57:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gmail]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mohan.k.adari]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Krishna@143]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Delete mails test pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test passed for Delete mails test pass]]>
+            </line>
+            <line>
+              <![CDATA[<a href="D:\Selenium\Workspace\org.mohan.mail\12-May-2020-01-57-21.png"><img src="D:\Selenium\Workspace\org.mohan.mail\12-May-2020-01-57-21.png" height="100" width="100"/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteUnreadMails -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.gmail.TestCases.TestCase@6eebc39e]" name="closeBrowser" is-config="true" duration-ms="2123" started-at="2020-05-12T13:57:31Z" finished-at="2020-05-12T13:57:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.gmail.TestCases.TestCase -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite -->
+</testng-results>
