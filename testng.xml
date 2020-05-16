@@ -63,6 +63,9 @@
   <classes>
      <class name="com.gmail.TestCases.TestCase">
         <methods>
+          <exclude name="mailLogintTest1"/>
+             <exclude name="mailLogintTest2"/>
+             <exclude name="mailLogintTest3"/>
          <include name="deleteUnreadMails"/>
        </methods>
      </class> 
