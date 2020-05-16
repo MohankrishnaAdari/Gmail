@@ -90,9 +90,14 @@ public class TestCase extends BaseClass
 	    
 	}
 	@Test()
-	@Parameters({"browser","title","uid","pwd","comment"})
+	//@Parameters({"browser","title","uid","pwd","comment"})
 	public void deleteUnreadMails(String bn,String title,String uid,String pwd,String com) throws Exception
 	{
+	   bn="chrome";
+	   title="Gmail";
+	   uid="mohan.k.adari";
+	   pwd="Krishna@143"
+	   com=mail test pass"
 	    openbrowser(bn);
 	    UidPage up=new UidPage(driver);
 	    PswdPage pp=new PswdPage(driver);
