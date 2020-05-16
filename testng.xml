@@ -55,12 +55,7 @@
    </classes>
   </test> 
 <test name="Test4">
-  
-    <parameter name="title" value="gmail"/>
-    <parameter name="uid" value="mohan.k.adari"/>
-    <parameter name="pwd" value="Krishna@143"/>
-    <parameter name="comment" value="Delete mails test pass"/>
-  <classes>
+    <classes>
      <class name="com.gmail.TestCases.TestCase">
         <methods>
           <include name="mailLogintTest1"/>
