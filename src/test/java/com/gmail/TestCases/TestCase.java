@@ -33,10 +33,10 @@ public class TestCase extends BaseClass
 	}
 	
 	@Test()
-	@Parameters({"browser","title","uid","uidcriteria","comment"})
-	public void mailLogintTest1(String bn,String title,String uid,String value,String com) throws Exception
+	@Parameters({"title","uid","uidcriteria","comment"})
+	public void mailLogintTest1(String title,String uid,String value,String com) throws Exception
 	{
-	    openbrowser(bn);
+	    openbrowser("chrome");
 	    UidPage up=new UidPage(driver);
 	    PswdPage pp=new PswdPage(driver);
 	    GmailHomePage hp=new GmailHomePage(driver);
