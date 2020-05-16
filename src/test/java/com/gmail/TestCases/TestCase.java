@@ -17,7 +17,7 @@ import com.gmail.pages.UidPage;
 public class TestCase extends BaseClass
 {
 	public Properties pro;
-	@Parameters({"browser","title","uid","uidcriteria","comment"})
+	
 	@BeforeMethod
 	public void method1() throws Exception
 	{
