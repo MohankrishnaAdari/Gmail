@@ -91,7 +91,7 @@ public class TestCase extends BaseClass
 	}
 	@Test()
 	@Parameters({"title","uid","pwd","comment"})
-	public void deleteUnreadMails(String bn,String title,String uid,String pwd,String com) throws Exception
+	public void deleteUnreadMails(String title,String uid,String pwd,String com) throws Exception
 	{
 	    openbrowser("chrome");
 	    UidPage up=new UidPage(driver);
