@@ -55,7 +55,7 @@
    </classes>
   </test> 
 <test name="Test4">
-  <parameter name="browser" value="chrome"/>
+  
     <parameter name="title" value="gmail"/>
     <parameter name="uid" value="mohan.k.adari"/>
     <parameter name="pwd" value="Krishna@143"/>
@@ -63,7 +63,7 @@
   <classes>
      <class name="com.gmail.TestCases.TestCase">
         <methods>
-          <exclude name="mailLogintTest1"/>
+          <include name="mailLogintTest1"/>
              <exclude name="mailLogintTest2"/>
              <exclude name="mailLogintTest3"/>
          <include name="deleteUnreadMails"/>
