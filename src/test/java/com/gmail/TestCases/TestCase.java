@@ -91,22 +91,22 @@ public class TestCase extends BaseClass
 	}
 	@Test()
 	@Parameters({"title","uid","pwd","comment"})
-	public void deleteUnreadMails(String title,String uid,String pwd,String com) throws Exception
+	public void deleteUnreadMails() throws Exception
 	{
 	    openbrowser("chrome");
 	    UidPage up=new UidPage(driver);
 	    PswdPage pp=new PswdPage(driver);
 	    GmailHomePage hp=new GmailHomePage(driver);
 	    launchsite(pro.getProperty("url"));
-	    validatetitle(title);
+	    validatetitle("gmail");
 	   // UidPage up=new UidPage(driver);
 	    //PswdPage pp=new PswdPage(driver);
-	    up.enteruid(uid);
+	    up.enteruid("mohan.k.adari");
 	    up.clickuidnext();
-	    pp.enterpwd(pwd);
+	    pp.enterpwd("Krishna@143");
 	    pp.clickpwdnext();
 	    hp.searchMails();
-	    hp.deletemails(com);
+	    hp.deletemails("gmail test pass");
 	    hp.signout();
 	    
 	    
