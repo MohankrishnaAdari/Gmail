@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test1">
-  
+    <parameter name="browser" value="chrome"/>
     <parameter name="title" value="gmail"/>
     <parameter name="uid" value=" "/>
     <parameter name="uidcriteria" value="blank"/>
@@ -10,7 +10,7 @@
   <classes>
       <class name="com.gmail.TestCases.TestCase">
           <methods>
-             <exclude name="mailLogintTest1"/>
+             <include name="mailLogintTest1"/>
              <exclude name="mailLogintTest2"/>
              <exclude name="mailLogintTest3"/>
              <exclude name="deleteUnreadMails"/>
@@ -20,7 +20,7 @@
   </test> <!-- Test -->
   
   <test name="Test2">
-  <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="chrome"/>
     <parameter name="title" value="gmail"/>
     <parameter name="uid" value="moh.k"/>
     <parameter name="uidcriteria" value="invalid"/>
@@ -29,7 +29,7 @@
     <class name="com.gmail.TestCases.TestCase">
        <methods>
              <exclude name="mailLogintTest1"/>
-             <exclude name="mailLogintTest2"/>
+             <include name="mailLogintTest2"/>
              <exclude name="mailLogintTest3"/>
              <exclude name="deleteUnreadMails"/>
        </methods>
@@ -37,7 +37,7 @@
    </classes>
   </test> 
    <test name="Test3">
-  <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="firefox"/>
     <parameter name="title" value="gmail"/>
     <parameter name="uid" value="mohan.k.adari"/>
     <parameter name="pwd" value="mohan@123"/>
@@ -48,20 +48,26 @@
         <methods>
              <exclude name="mailLogintTest1"/>
              <exclude name="mailLogintTest2"/>
-             <exclude name="mailLogintTest3"/>
+             <include name="mailLogintTest3"/>
              <exclude name="deleteUnreadMails"/>
        </methods>
      </class> 
    </classes>
   </test> 
 <test name="Test4">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="title" value="gmail"/>
+    <parameter name="uid" value="mohan.k.adari"/>
+    <parameter name="pwd" value="Krishna@143"/>
+    <parameter name="pwdcriteria" value="valid"/>
+    <parameter name="comment" value="Delete mails"/>
     <classes>
      <class name="com.gmail.TestCases.TestCase">
         <methods>
-          <include name="mailLogintTest1"/>
+             <exclude name="mailLogintTest1"/>
              <exclude name="mailLogintTest2"/>
              <exclude name="mailLogintTest3"/>
-         <include name="deleteUnreadMails"/>
+              <include name="deleteUnreadMails"/>
        </methods>
      </class> 
    </classes>
