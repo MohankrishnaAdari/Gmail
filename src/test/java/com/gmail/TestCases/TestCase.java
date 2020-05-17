@@ -33,10 +33,10 @@ public class TestCase extends BaseClass
 	}
 	
 	@Test()
-	@Parameters({"title","uid","uidcriteria","comment"})
-	public void mailLogintTest1(String title,String uid,String value,String com) throws Exception
+	@Parameters({"browser","title","uid","uidcriteria","comment"})
+	public void mailLogintTest1(String bn,String title,String uid,String value,String com) throws Exception
 	{
-	    openbrowser("chrome");
+	    openbrowser(bn);
 	    UidPage up=new UidPage(driver);
 	    PswdPage pp=new PswdPage(driver);
 	    GmailHomePage hp=new GmailHomePage(driver);
@@ -90,23 +90,24 @@ public class TestCase extends BaseClass
 	    
 	}
 	@Test()
-	@Parameters({"title","uid","pwd","comment"})
-	public void deleteUnreadMails() throws Exception
+	@Parameters({"browser","title","uid","pwd","pwdcriteria","comment"})
+	public void deleteUnreadMails(String bn,String title,String uid,String pwd,String value,String com,String comment) throws Exception
 	{
-	    openbrowser("chrome");
+	    openbrowser(bn);
 	    UidPage up=new UidPage(driver);
 	    PswdPage pp=new PswdPage(driver);
 	    GmailHomePage hp=new GmailHomePage(driver);
 	    launchsite(pro.getProperty("url"));
-	    validatetitle("gmail");
+	    validatetitle(title);
 	   // UidPage up=new UidPage(driver);
 	    //PswdPage pp=new PswdPage(driver);
-	    up.enteruid("mohan.k.adari");
+	    up.enteruid(uid);
 	    up.clickuidnext();
-	    pp.enterpwd("Krishna@143");
+	    pp.enterpwd(pwd);
 	    pp.clickpwdnext();
+	    pp.validatePasswordCriteria(value,com);
 	    hp.searchMails();
-	    hp.deletemails("gmail test pass");
+	    hp.deletemails(comment);
 	    hp.signout();
 	    
 	    
