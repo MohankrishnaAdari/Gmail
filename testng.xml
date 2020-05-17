@@ -60,7 +60,8 @@
     <parameter name="uid" value="mohan.k.adari"/>
     <parameter name="pwd" value="Krishna@143"/>
     <parameter name="pwdcriteria" value="valid"/>
-    <parameter name="comment" value="Delete mails"/>
+    <parameter name="comment" value="pwd is valid"/>
+    <parameter name="com" value="Delete mails"/>
     <classes>
      <class name="com.gmail.TestCases.TestCase">
         <methods>
