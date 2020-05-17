@@ -48,7 +48,7 @@
         <methods>
              <exclude name="mailLogintTest1"/>
              <exclude name="mailLogintTest2"/>
-             <include name="mailLogintTest3"/>
+             <exclude name="mailLogintTest3"/>
              <exclude name="deleteUnreadMails"/>
        </methods>
      </class> 
