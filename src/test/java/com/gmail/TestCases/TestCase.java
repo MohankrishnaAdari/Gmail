@@ -90,7 +90,7 @@ public class TestCase extends BaseClass
 	    
 	}
 	@Test()
-	@Parameters({"browser","title","uid","pwd","pwdcriteria","comment"})
+	@Parameters({"browser","title","uid","pwd","pwdcriteria","comment","com"})
 	public void deleteUnreadMails(String bn,String title,String uid,String pwd,String value,String com,String comment) throws Exception
 	{
 	    openbrowser(bn);
