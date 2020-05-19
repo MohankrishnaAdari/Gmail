@@ -40,7 +40,7 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="title" value="Gmail"/>
     <parameter name="uid" value="mohan.k.adari"/>
-    <parameter name="pwd" value="Krishna@143"/>
+    <parameter name="pwd" value="kri@143"/>
     <parameter name="pwdcriteria" value="invalid"/>
     <parameter name="comment" value="pwd is invalid"/>
   <classes>
