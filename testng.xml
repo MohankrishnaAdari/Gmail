@@ -20,7 +20,7 @@
   </test> <!-- Test -->
   
   <test name="Test2">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <parameter name="title" value="gmail"/>
     <parameter name="uid" value="moh.k"/>
     <parameter name="uidcriteria" value="invalid"/>
@@ -40,7 +40,7 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="title" value="Gmail"/>
     <parameter name="uid" value="mohan.k.adari"/>
-    <parameter name="pwd" value="kri@143"/>
+    <parameter name="pwd" value="12kri@143"/>
     <parameter name="pwdcriteria" value="invalid"/>
     <parameter name="comment" value="pwd is invalid"/>
   <classes>
