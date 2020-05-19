@@ -59,7 +59,7 @@ public class BaseClass
   public void validatetitle(String expval)
   {
 	  String actval=driver.getTitle();
-	  if(actval.equalsIgnoreCase(expval))
+	  if(actval.equals(expval))
 	  {
 		  System.out.println("title test pass");
 	  }
