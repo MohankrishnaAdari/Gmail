@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test1">
     <parameter name="browser" value="opera"/>
-    <parameter name="title" value="gmail"/>
+    <parameter name="title" value="Gmail"/>
     <parameter name="uid" value=" "/>
     <parameter name="uidcriteria" value="blank"/>
     <parameter name="comment" value="uid is blank"/>
@@ -21,7 +21,7 @@
   
   <test name="Test2">
     <parameter name="browser" value="chrome"/>
-    <parameter name="title" value="gmail"/>
+    <parameter name="title" value="Gmail"/>
     <parameter name="uid" value="moh.k"/>
     <parameter name="uidcriteria" value="invalid"/>
     <parameter name="comment" value="uid is invalid"/>
@@ -56,7 +56,7 @@
   </test> 
 <test name="Test4">
     <parameter name="browser" value="chrome"/>
-    <parameter name="title" value="gmail"/>
+    <parameter name="title" value="Gmail"/>
     <parameter name="uid" value="mohan.k.adari"/>
     <parameter name="pwd" value="Krishna@143"/>
     <parameter name="pwdcriteria" value="valid"/>
