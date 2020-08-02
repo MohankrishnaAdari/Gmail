@@ -26,7 +26,7 @@ public class GmailHomePage extends LibraryClass
 	@FindBy (xpath="//*[@gh='mtb']/descendant::div[@aria-label='Delete']")
 	public static WebElement deleteBtn;
 	//------------------------signout-----------------
-	@FindBy (xpath="//*[starts-with(@aria-label,'Google Account')]/child::span")
+	@FindBy (xpath="//*[starts-with(@aria-label,'Google Account')]")
 	public static WebElement gmailProfile;
 	
 	@FindBy (xpath="//a[text()='Sign out']")
