@@ -10,11 +10,11 @@ import com.gmail.Library.LibraryClass;
 public class PswdPage extends LibraryClass
 {
 	//-------------------UserField ----------------------
- @FindBy(xpath="//input[@id='password']")
+ @FindBy(xpath="//input[@name='password']")
  public static WebElement pwd;
 //-------------------Next Btn ----------------------
  
- @FindBy (xpath=""//input[@id='submit']")
+ @FindBy (xpath=""//input[@id='passwordNext']")
  public static WebElement nxtbtn;
 //-------------------Error Msg for Uid ----------------------
  @FindBy(xpath ="//*[text()='Enter a password']")
