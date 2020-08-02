@@ -14,7 +14,7 @@ public class PswdPage extends LibraryClass
  public static WebElement pwd;
 //-------------------Next Btn ----------------------
  
- @FindBy (xpath=""//input[@id='passwordNext']")
+ @FindBy (xpath="//input[@id='passwordNext']")
  public static WebElement nxtbtn;
 //-------------------Error Msg for Uid ----------------------
  @FindBy(xpath ="//*[text()='Enter a password']")
