@@ -14,7 +14,7 @@ public class UidPage extends LibraryClass
  public static WebElement uid;
 //-------------------Next Btn ----------------------
  
- @FindBy (xpath="//input[@id='identifierNext']")
+ @FindBy (xpath="//span[text()='Next']")
  public static WebElement nxtbtn;
 //-------------------Error Msg for Uid ----------------------
  @FindBy(xpath ="//div[contains(text(),'Enter an email')]")
