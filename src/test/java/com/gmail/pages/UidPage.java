@@ -10,11 +10,11 @@ import com.gmail.Library.LibraryClass;
 public class UidPage extends LibraryClass
 {
 	//-------------------UserField ----------------------
- @FindBy(xpath="//input[@id='Email']")
+ @FindBy(xpath="//input[@name='identifier']")
  public static WebElement uid;
 //-------------------Next Btn ----------------------
  
- @FindBy (xpath="//input[@id='next']")
+ @FindBy (xpath="//input[@id='identifierNext']")
  public static WebElement nxtbtn;
 //-------------------Error Msg for Uid ----------------------
  @FindBy(xpath ="//div[contains(text(),'Enter an email')]")
